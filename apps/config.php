@@ -17,4 +17,7 @@ $GlobalConfig = array(
         , 'dbPassword'=> ''
         , 'dbName'    => 'tenant.com'
     ),
+    'Layout'    => array(
+          'masterLayout' => 'Layout1'
+    )
 );

@@ -19,3 +19,7 @@ function dd($data ){
     echo '</pre>';
     die ;
 }
+
+function loadModel($com,$modelClass) {
+    require_once APP_PATH . "models/". strtolower($com) . "/" . strtolower($modelClass) .".class.php";
+}

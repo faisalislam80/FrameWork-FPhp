@@ -18,24 +18,28 @@ require_once "pathVariables.php";
 
 $autoLoads = array(
     'Packages'      => array(
-        'database','request','route','validation'
+        'database',
+        'request',
+        'route',
+        'validation',
+        'FHtml'
     ),
     'Controller'    => array(
         'user'
     ),
     'Models'        => array(
-
+        'users'
     )
 );
 
 foreach($autoLoads as $k => $v){
     if($k == 'Packages'){
         foreach($v as $package){
-            $files = scandir(LIB_PATH."/Packages/".strtolower($package));
+            $files = scandir(LIB_PATH."/Packages/".$package);
             foreach($files as $file){
                 if(strlen($file) > 10){
                     if ('class.php' === substr($file,-9,10)){
-                        require_once LIB_PATH . "/Packages/" . strtolower($package) . "/" . strtolower($file);
+                        require_once LIB_PATH . "/Packages/" . $package . "/" . strtolower($file);
                     }
                 }
             }

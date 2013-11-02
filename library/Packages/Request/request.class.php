@@ -58,4 +58,10 @@ class FRequest {
     public function requestPath() {
         return isset($_GET['app']) ? $_GET['app'] : '/' ;
     }
+
+    public function postData() {
+        if($this->isPost()){
+            return $_POST;
+        }
+    }
 }

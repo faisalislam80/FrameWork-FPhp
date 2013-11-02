@@ -7,14 +7,14 @@
  */
 
 /**
- * Load Common Functions
- */
-include_once "functions.php";
-
-/**
  * Autoload Files
  */
 include_once "autoload.php";
+
+/**
+ * Load Common Functions
+ */
+include_once "functions.php";
 
 /**
  * Include Configurations
