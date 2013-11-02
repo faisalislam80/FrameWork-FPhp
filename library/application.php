@@ -7,9 +7,19 @@
  */
 
 /**
+ * Load Common Functions
+ */
+include_once "functions.php";
+
+/**
  * Autoload Files
  */
 include_once "autoload.php";
+
+/**
+ * Include Configurations
+ */
+include_once APP_PATH . "config.php";
 
 /**
  * Routing
@@ -21,18 +31,4 @@ try{
 }
 catch (Exception $e){
     echo $e->getMessage();
-}
-
-
-/**
- * Dump and die
- * @param $data
- * @since   Nov 2, 2013
- * @version 1.0
- */
-function dd($data ){
-    echo '<pre>';
-        var_dump($data);
-    echo '</pre>';
-    die ;
 }

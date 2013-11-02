@@ -9,7 +9,7 @@
 class User {
 
     function create(){
-        echo 'hi';
+
     }
 
 }

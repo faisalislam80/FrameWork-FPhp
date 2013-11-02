@@ -18,7 +18,7 @@ require_once "pathVariables.php";
 
 $autoLoads = array(
     'Packages'      => array(
-        'database','request','route'
+        'database','request','route','validation'
     ),
     'Controller'    => array(
         'user'

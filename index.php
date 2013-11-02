@@ -8,5 +8,6 @@
 
 require_once "library/application.php";
 
-$request = FRequest::getInstance();
+$database = SingletonDatabase::getInstance();
+$database->save('guest',array('firstname'=>'Faisal','lastname'=>'Islam'));
 
