@@ -2,11 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="3bf71122-27de-4447-ac9d-c03b29ee72b7" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/apps/models/users/guest.class.php" afterPath="$PROJECT_DIR$/apps/models/users/guest.class.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/apps/views/user/guestNew.fhtml.php" afterPath="$PROJECT_DIR$/apps/views/user/guestNew.fhtml.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/library/Packages/database/singleton.class.php" afterPath="$PROJECT_DIR$/library/Packages/database/singleton.class.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/apps/controllers/user/user.class.php" afterPath="$PROJECT_DIR$/apps/controllers/user/user.class.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/library/Packages/Validation/validation.class.php" afterPath="$PROJECT_DIR$/library/Packages/Validation/validation.class.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="tenant.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -22,13 +20,13 @@
     <file path="/route.php" changelist="3bf71122-27de-4447-ac9d-c03b29ee72b7" time="1383409035716" ignored="false" />
     <file path="/route.class.php" changelist="3bf71122-27de-4447-ac9d-c03b29ee72b7" time="1383408904992" ignored="false" />
     <file path="/application.php" changelist="3bf71122-27de-4447-ac9d-c03b29ee72b7" time="1383409976431" ignored="false" />
-    <file path="/user.class.php" changelist="3bf71122-27de-4447-ac9d-c03b29ee72b7" time="1383454640393" ignored="false" />
+    <file path="/user.class.php" changelist="3bf71122-27de-4447-ac9d-c03b29ee72b7" time="1383456634267" ignored="false" />
     <file path="/database.class.php" changelist="3bf71122-27de-4447-ac9d-c03b29ee72b7" time="1383410335143" ignored="false" />
     <file path="/db.class.php" changelist="3bf71122-27de-4447-ac9d-c03b29ee72b7" time="1383414004256" ignored="false" />
     <file path="/validation.class.php" changelist="3bf71122-27de-4447-ac9d-c03b29ee72b7" time="1383452091606" ignored="false" />
     <file path="/users.class.php" changelist="3bf71122-27de-4447-ac9d-c03b29ee72b7" time="1383416026390" ignored="false" />
     <file path="/a.dummy" changelist="3bf71122-27de-4447-ac9d-c03b29ee72b7" time="1383415134834" ignored="false" />
-    <file path="/singleton.class.php" changelist="3bf71122-27de-4447-ac9d-c03b29ee72b7" time="1383454435575" ignored="false" />
+    <file path="/singleton.class.php" changelist="3bf71122-27de-4447-ac9d-c03b29ee72b7" time="1383457220012" ignored="false" />
     <file path="/fhtml.class.php" changelist="3bf71122-27de-4447-ac9d-c03b29ee72b7" time="1383422050493" ignored="false" />
     <file path="/Layout1.fhtml.php" changelist="3bf71122-27de-4447-ac9d-c03b29ee72b7" time="1383422217824" ignored="false" />
     <file path="/dummy.xml" changelist="3bf71122-27de-4447-ac9d-c03b29ee72b7" time="1383417553445" ignored="false" />
@@ -98,10 +96,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="user.class.php" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="user.class.php" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/apps/controllers/user/user.class.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="36" column="31" selection-start="948" selection-end="948" vertical-scroll-proportion="0.8831169">
+            <state line="37" column="25" selection-start="1038" selection-end="1038" vertical-scroll-proportion="-13.076923">
               <folding>
                 <element signature="e#6#135#0" expanded="true" />
               </folding>
@@ -109,10 +107,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="singleton.class.php" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="singleton.class.php" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/library/Packages/database/singleton.class.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="44" column="25" selection-start="1311" selection-end="1311" vertical-scroll-proportion="-6.3461537">
+            <state line="73" column="0" selection-start="2198" selection-end="2198" vertical-scroll-proportion="-0.19851577">
               <folding />
             </state>
           </provider>
@@ -189,8 +187,8 @@
         <option value="$PROJECT_DIR$/apps/views/user/guestNew.fhtml.php" />
         <option value="$PROJECT_DIR$/library/Packages/Validation/validation.class.php" />
         <option value="$PROJECT_DIR$/apps/models/users/guest.class.php" />
-        <option value="$PROJECT_DIR$/library/Packages/database/singleton.class.php" />
         <option value="$PROJECT_DIR$/apps/controllers/user/user.class.php" />
+        <option value="$PROJECT_DIR$/library/Packages/database/singleton.class.php" />
       </list>
     </option>
   </component>
@@ -708,13 +706,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/library/Packages/database/singleton.class.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="44" column="25" selection-start="1311" selection-end="1311" vertical-scroll-proportion="-6.3461537">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/apps/models/users/guest.class.php">
       <provider selected="true" editor-type-id="text-editor">
         <state line="9" column="0" selection-start="188" selection-end="188" vertical-scroll-proportion="-2.6153846">
@@ -724,10 +715,17 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/apps/controllers/user/user.class.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="36" column="31" selection-start="948" selection-end="948" vertical-scroll-proportion="0.8831169">
+        <state line="37" column="25" selection-start="1038" selection-end="1038" vertical-scroll-proportion="-13.076923">
           <folding>
             <element signature="e#6#135#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/library/Packages/database/singleton.class.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="73" column="0" selection-start="2198" selection-end="2198" vertical-scroll-proportion="-0.19851577">
+          <folding />
         </state>
       </provider>
     </entry>

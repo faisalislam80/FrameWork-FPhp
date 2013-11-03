@@ -9,6 +9,10 @@
 class SingletonDatabase extends FDatabase {
 
     protected $allProperties;
+    protected $where = null ;
+    protected $andWhere = null ;
+    protected $orWhere = null ;
+
     public function __construct($tableName,$id = null){
         parent::__construct();
         $this->tableName = $tableName;
@@ -44,10 +48,15 @@ class SingletonDatabase extends FDatabase {
 
     public function save() {
         $this->getAllProperty();
-        $strSQL = 'INSERT INTO '. $this->tableName.' SET ';
+        $strSQL = 'INSERT INTO '. $this->tableName.' SET  ';
+        $iniSQL = $strSQL;
         foreach($this->allProperties as $key => $val){
             if($val != ''){
-                if($key == 'tableName' || $key == 'database'){
+                if($key == 'tableName' || $key == 'database'
+                                       || $key == 'where'
+                                       || $key == 'andWhere'
+                                       || $key == 'orWhere'
+                ){
                     continue;
                 }
                 else{
@@ -55,9 +64,42 @@ class SingletonDatabase extends FDatabase {
                 }
             }
         }
+
+        if($iniSQL === $strSQL){
+            echo 'No value passed';
+            return false;
+        }
+
         $strSQL = substr($strSQL, 0, -2);
+
+        if($this->where != null ){
+            $strSQL = str_ireplace('INSERT INTO','UPDATE',$strSQL);
+            $strSQL .= $this->where;
+        }
+
+        if($this->andWhere != null ){
+            $strSQL .= $this->andWhere;
+        }
+
+        if($this->orWhere != null ){
+            $strSQL .= $this->orWhere;
+        }
+
+        echo $strSQL;
+
         $statement = $this->database->prepare($strSQL);
         return $statement->execute() ? true : false ;
     }
 
+    public function where($field,$value,$operator = '=') {
+        $this->where = ' WHERE `' . $field . '` ' .$operator. ' ' . $value ;
+    }
+
+    public function andWhere($field,$value,$operator = '=') {
+        $this->andWhere = ' AND ' . $field . ' ' .$operator. ' ' . $value ;
+    }
+
+    public function orWhere($field,$value,$operator = '=') {
+        $this->orWhere = ' OR ' . $field . ' ' .$operator. ' ' . $value ;
+    }
 }

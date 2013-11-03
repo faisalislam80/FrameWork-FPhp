@@ -33,7 +33,8 @@ class User extends FRequest{
             $guestCard->lastname = $data['lastname'];
             $guestCard->phone = $data['phone'];
             $guestCard->cell = $data['cell'];
-
+            $guestCard->where('id',5);
+            //$guestCard->andWhere('firstname','Faisal');
             $guestCard->save();
         }
     }
