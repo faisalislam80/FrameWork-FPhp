@@ -8,9 +8,8 @@
 
 class GuestCard extends SingletonDatabase {
 
-    protected $tableName = 'guest_card';
-
     public function __construct($id = null){
+        $this->tableName = 'guest_card';
         if($id === null){
             parent::__construct($this->tableName);
         }

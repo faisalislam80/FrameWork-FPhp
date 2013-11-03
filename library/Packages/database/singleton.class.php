@@ -8,8 +8,7 @@
 
 class SingletonDatabase extends FDatabase {
 
-    protected $tableName;
-
+    protected $allProperties;
     public function __construct($tableName,$id = null){
         parent::__construct();
         $this->tableName = $tableName;
@@ -39,6 +38,26 @@ class SingletonDatabase extends FDatabase {
         }
     }
 
-    public function save() {}
+    protected function getAllProperty() {
+        $this->allProperties = get_object_vars($this);
+    }
+
+    public function save() {
+        $this->getAllProperty();
+        $strSQL = 'INSERT INTO '. $this->tableName.' SET ';
+        foreach($this->allProperties as $key => $val){
+            if($val != ''){
+                if($key == 'tableName' || $key == 'database'){
+                    continue;
+                }
+                else{
+                    $strSQL .= '`'.$key .'` = \''.$val.'\', ';
+                }
+            }
+        }
+        $strSQL = substr($strSQL, 0, -2);
+        $statement = $this->database->prepare($strSQL);
+        return $statement->execute() ? true : false ;
+    }
 
 }
